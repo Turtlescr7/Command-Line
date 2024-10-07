@@ -1,0 +1,65 @@
+The following workout was done in Git Bash
+**Part I**
+1. make a directory called ***first***
+mkdir first
+2. change directory to the ***first*** folder
+cd first
+3. create a file called ***person.txt***
+touch person.txt 
+4. change the name of ***person.txt*** to *another.txt*
+mv person.txt another.txt
+5. make a copy of the ***another.txt*** file and call it ***copy.txt***
+cp another.txt copy.txt
+6. remove the ***copy.txt*** file
+rm copy.txt
+7. make a copy of the ***first*** folder and call it *second*
+cp -r first second
+8. delete the ***second*** folder
+rm -r second
+
+**Part II**
+1. What does the ***man*** command do? Type in ***man rm***. How do you scroll and get out?
+man command provides online documentation for various commands and utilities on your system.
+To scoll and get out of 'man rm' you use the arrow keys to move within the page. You can press space
+to scroll down a full page, b to scroll up a full page, and q to quit the man page.
+
+2. Look at the ***man*** page for ***ls***. What does the ***-l*** flag do? What does the ***-a*** flag do?
+ls -l displays a long listing format for files and directories. This includes infomation like permissions, 
+owner, group, size, modification time, and the file or directory name
+ls -a displays all files and directories, including hidden files(those starting with a dot)
+
+3. How do you jump between words in the terminal?
+You press ctrl+f to move foward one word and ctlr+b to go backwords one word.
+
+4. How do you get to the end of a line in terminal?
+You press ctlr+e
+
+5. How do you move your cursor to the beginning in terminal?
+You press ctrl+a
+
+6. How do you delete a word (without pressing backspace multiple times) in terminal?
+You press ctlr+w
+
+7. What is the difference between a terminal and shell?
+A terminal is a program that provides text-base interface for interacting with a computer system.
+While shell is a program that interprets and executes commands entered by the user.
+Fun fact a terminal often uses a shell as its interface.
+
+8. What is an absolute path?
+An absolute path specifies the exact location of a file or directory starting form the 
+root directory (usually /). For example, /home/user/documents/report.txt . 
+
+9. What is an relative path?
+A relative path specifies the location of a file or directory relative to the current working 
+directory. For example, documents/report.txt assuming the current directory is /home/user .
+
+10. What is a flag? Give three examples of flags you have used.
+Flags are options that modify the behavior of commands. They are usually preceded by hyphen(-)
+Ex:
+ls -l (long listing)
+rm -r (remove recursively)
+grep -i (case-insensitive search)
+
+11. What do the ***r*** and ***f*** flags do with the *rm* command?
+-r removes directories recursively, including their contents.
+-f forces removal, even if the file is read-only or dosen't exist.
